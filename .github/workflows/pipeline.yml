@@ -2,7 +2,7 @@ name: Spotify Pipeline
 on:
   schedule:
     - cron: '0 */6 * * *'
-    # timezone: Europe/London
+  workflow_dispatch:
 jobs:
   run_pipeline:
     runs-on: ubuntu-latest
@@ -21,6 +21,7 @@ jobs:
           SPOTIFY_CLIENT_ID: ${{secrets.SPOTIFY_CLIENT_ID}}
           SPOTIFY_CLIENT_SECRET: ${{secrets.SPOTIFY_CLIENT_SECRET}}
           SPOTIFY_REDIRECT_URI: ${{secrets.SPOTIPY_REDIRECT_URI}}
+          SPOTIFY_REFRESH_TOKEN: ${{secrets.SPOTIFY_REFRESH_TOKEN}}
           DB_NAME: ${{secrets.DB_NAME}}
           DB_USER: ${{secrets.DB_USER}}
           DB_PASSWORD: ${{secrets.DB_PASSWORD}}
