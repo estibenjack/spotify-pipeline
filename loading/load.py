@@ -43,7 +43,7 @@ def load_tracks(tracks):
     # commit once after all inserts — more efficient than committing inside the loop
     conn.commit()
 
-    print(f"Load completed - {datetime.now()}!")
+    print(f"Load complete - {datetime.now()}")
 
     cur.close()
     conn.close()
