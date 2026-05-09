@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 import psycopg2
+from datetime import datetime
 
 
 def load_tracks(tracks):
@@ -42,7 +43,7 @@ def load_tracks(tracks):
     # commit once after all inserts — more efficient than committing inside the loop
     conn.commit()
 
-    print("The load is complete!")
+    print(f"Load completed - {datetime.now()}!")
 
     cur.close()
     conn.close()
