@@ -104,6 +104,9 @@ Instead I opted for GitHub Actions, which runs the pipeline automatically every 
 
 A `workflow_dispatch` trigger was also added to allow manual runs for testing purposes.
 
+### Pipeline Runs
+![GitHub Actions Runs](assets/github-actions-runs.png)
+
 ## Database Schema
 | Column     | Type                     | Description                                                       |
 |------------|--------------------------|-------------------------------------------------------------------|
