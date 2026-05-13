@@ -125,7 +125,7 @@ A `workflow_dispatch` trigger was also added to allow manual runs for testing pu
 ![GitHub Actions Runs](assets/github-actions-runs.png)
 
 ## Database Schema
-### The original schema ❌
+### The original schema 💀❌
 | Column     | Type                     | Description                                                       |
 |------------|--------------------------|-------------------------------------------------------------------|
 | id         | SERIAL PRIMARY KEY       | Auto-generated unique row identifier                              |
