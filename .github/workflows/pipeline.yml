@@ -29,4 +29,6 @@ jobs:
           DB_PASSWORD: ${{secrets.DB_PASSWORD}}
           DB_HOST: ${{secrets.DB_HOST}}
           DB_PORT: ${{secrets.DB_PORT}}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_API_SECRET: ${{ secrets.LASTFM_API_SECRET }}
         run: python main.py
